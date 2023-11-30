@@ -23,17 +23,20 @@ public class Opration {
 		a.setMobile_no(sc.nextInt());
 		System.out.println("Enter a your Address : ");
 		a.setAddress(sc.next());
+		while(true){
 		System.out.println("Enter a ammount to we want to deposit (Minimum required 500) : ");
 		aa=sc.nextDouble();
 		if (aa>499)
 		{
 			a.setBalance(aa);
+			break;
 		
 		}
 		else
 		{
 			System.out.println("you enter less then 500");
 	
+		}
 		}
 //		a.setBalance(aa);
 		
@@ -42,31 +45,7 @@ public class Opration {
 		System.out.println("Your Account Opened \nThank You !");
 		
 	}
-	
-	public void balance()
-	{
-		for (double i =500;i>=aa;)
-		{
-			if (aa>499)
-			{
-				
-		
-				a.setBalance(aa);
-				break;
-				
-			}
-			else
-			{
-				System.out.println("you enter less then 500 \nPlease enter double");
-				aa=sc.nextDouble();
-			
-				
-			}
-			
-		}
-		
-	}
-	
+
 	public void Deposit()
 	{
 		System.out.println("Enter a Account Number : ");
